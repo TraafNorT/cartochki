@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .float-right {
+        float: right;
+      }
+      .grid-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill,minmax(224px,1fr));
+        grid-auto-rows: 224px;
+        grid-auto-columns: 224px;
+      }
+      .grid-item {
+        border: 2px solid #ddd;
+        overflow: hidden;
+      }
+      .grid-item-big {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+      }
+      .grid-item-big {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+      }
+      .grid-item-vertical {
+        grid-row-end: span 2;
+        grid-column-end: span 1;
+      }
+      .grid-item-horizontal-long {
+        grid-row-end: span 1;
+        grid-column-end: span 3;
+      }
+      .grid-item-horizontal-small {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mother" class="grid-container">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
